@@ -3,12 +3,13 @@ package service;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.Set;
 
 
 @Service
-@Scope("session")
+@SessionScope
 @SpringBootApplication
 
 public class ShoppingServiceImpl implements ShoppingService {

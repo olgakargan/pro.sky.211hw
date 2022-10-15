@@ -1,5 +1,6 @@
 package controller;
 
+import org.springframework.web.context.annotation.SessionScope;
 import service.ShoppingService;
 import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +12,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/order")
-@Scope("session")
+@SessionScope
 public class ShoppingController {
     private final ShoppingService shoppingService;
 
